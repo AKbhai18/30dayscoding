@@ -1,0 +1,23 @@
+1: Download and install Go: https://go.dev
+2: Set the GOMODCACHE environment variable (Eg: export GOMODCACHE=$HOME/go/pkg). The directory where third-party libraries will be dowloaded 
+3: Set the GOBIN environment variable - The directory where go commands will place binaries after building main packages. It’s better set to a directory on the system PATH so that installed binaries can be run and discovered easily.
+
+go install -> GOBIN is a global bin for your Go executable
+
+4: Install GIT: https://git-scm.com 
+5: Install an IDE, VS Code: https://code.visualstudio.com 
+Go plugin: https://code.visualstudio.com/docs/languages/go
+GoLand: https://www.jetbrains.com/go/  
+ 
+6: git clone https://github.com/shijuvar/gokit.git
+
+
+go env
+
+go.mod ("Go modules" -> dependency management solution)
+go mod init "name"
+
+go build -o hello
+
+GOOS=windows GOARCH=amd64 go build
+
